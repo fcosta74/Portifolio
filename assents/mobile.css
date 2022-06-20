@@ -1,0 +1,22 @@
+.container{
+    max-width: 1120px;
+  }
+
+#header-container{
+    flex-direction: column;
+    padding: 20px 0;
+    height: 200px;
+    position: initial;
+    max-width: 1120px;
+}
+#nav .menu{
+    opacity:1;
+    visibility:visible;
+  }
+#nav .menu ul{
+    display:flex;
+    gap: 2rem;
+  }
+#nav .menu ul li a{
+    font: var(--font-p)
+  }
