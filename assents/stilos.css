@@ -264,9 +264,3 @@ h2{
     color: #1e1e2a;
    
 }
-@media (min-width: 1200px){
-    .container{
-      max-width: 1120px;
-    }
-  
-}
