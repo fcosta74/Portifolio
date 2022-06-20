@@ -213,6 +213,8 @@ h2{
 }
 .card-wrapper::before{
     content: '';
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     display: block;
     border: 2px solid #60e1e0;
