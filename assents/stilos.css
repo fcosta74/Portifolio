@@ -264,3 +264,15 @@ h2{
     color: #1e1e2a;
    
 }
+@media screen and (max-width: 1200px) {
+    .header-container{
+        height: 100%;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    #header-container .title .h1{
+        font-size: 1rem;
+    }
+    
+}
