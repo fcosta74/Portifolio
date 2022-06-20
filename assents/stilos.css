@@ -12,7 +12,7 @@ body{
 
 
 .header-container{
-    height: 70vh;
+    height: auto;
     width: 100%;
     background-image: url(./img/trabalho.jpg);
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ h2{
 }
 
 .checkbox{
-    height: 100px;
+    height: auto;
     width: 100px;
     position: absolute;
     right: 0;
@@ -179,10 +179,11 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    
 }
 .card{
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     margin: 2rem 0 0 0;
     display: flex;
@@ -241,8 +242,8 @@ h2{
     filter: unset;
 }
 .card:hover > .card-wrapper::before{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     opacity: 1;
 }
 .card:hover > .card-wrapper a {
@@ -263,16 +264,4 @@ h2{
     justify-content: center;
     color: #1e1e2a;
    
-}
-@media screen and (max-width: 1200px) {
-    .header-container{
-        height: 100%;
-        flex-direction: column;
-        width: 100%;
-        
-    }
-    #header-container .title .h1{
-        font-size: 1rem;
-    }
-    
 }
