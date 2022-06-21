@@ -1,78 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Playstation Store</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="navbar">
-            <img class="logo" src="./img/logo.png" alt="logo">
-            <nav>
-                <ul id="menu-list">
-                    <li class="nav-li"><a href="https://www.magazinevoce.com.br/magazinefcsantos/playstation-5-digital-edition-2020-nova-geracao-sony/p/kk4e1a11e9/GA/GPS5/" class="nav-link">Consoles</a></li>
-                    <li class="nav-li"><a href="https://www.magazinevoce.com.br/magazinefcsantos/busca/acess%C3%B3rios+ps5/" class="nav-link">Acessórios</a></li>
-                    <li class="nav-li"><a href="https://www.magazinevoce.com.br/magazinefcsantos/busca/controles+playstation/" class="nav-link">Controles</a></li>
-                    <li class="nav-li"><a href="https://www.magazinevoce.com.br/magazinefcsantos/busca/playstation+jogos/" class="nav-link">Jogos</a></li>
-                </ul>
-            </nav>
-            <img src="./img/menu.png" alt="botao-menu" class="menu-icon" onclick="showMenu()">
-        </div>
-
-
-        <div class="row">
-            <div class="column-1">
-                <h2>PS5 Dualshok</h2>
-                <h3>Wireless Controller for PlayStation</h3>
-                <p>Controle Original</p>
-                
-                <button class="buy">
-                    <a href="https://www.magazinevoce.com.br/magazinefcsantos/busca/Controle+PlayStation+5+Sem+Fio+DualSense/"><b>Comprar agora<b></a>
-                    
-                </button>
-              
-
-            </div>
-
-            <div class="column-2">
-                <img class="controller" src="./img/controller.png" alt="controle">
-                <div class="color-box"></div>
-                <button class="add-cart">
-                    <img src="./img/add.png" alt="adicionar-ao-carrinho">
-                </button>
-            </div>
-        </div>
-
-        <div class="social-links">
-            <a href="https://www.facebook.com/fabiossantoscostas"><img border="0" src="./img/fb.png"></a>
-            <a href="https://www.instagram.com/fabio4.3/"><img border="0" src="./img/ig.png"></a>
-            <a href="https://api.whatsapp.com/send/?phone=5571991227224&text&app_absent=0"><img border="0" src="./img/whatsapp2.png"/></a>     
-        </div>
-
-    </div>
-</body>
-<script>
-    const menulist = document.getElementById("menu-list")
-    menulist.style.maxHeight = "0px"
+    <link rel="stylesheet" href="assents/stilos.css">
     
-    function showMenu(){
-        if(menulist.style.maxHeight == "0px"){
-            menulist.style.maxHeight = "120px"
-        } else {
-            menulist.style.maxHeight = "0px"
-        }
-    }
+    
+    <title>Portifólio</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                    
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li><a href="#"><b>Home</b></a></li>
+                            <li><a href="#"><b>Sobre<b></a></li>
+                            <li><a href="#"><b>Projetos<b></a></li>
 
-
-</script>
-
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+        
+        <h1 class="title"><b>Fábio Santos</b></h1>
+        <h2>Aprendendo a Progamar<br> para poder buscar uma <br>chance de trabalho nesse<br> fantástico mundo.</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/f%C3%A1bio-santos-6aab25109/"><img border="0" src="./assents/icons/linkedincolo.png"/></a>
+            <a href="https://github.com/fcosta74"><img border="0" src="./assents/icons/githubcolo.png"/></a>
+            <a href="https://www.instagram.com/fabio4.3/"><img border="0" src="./assents/icons/instagram.png"/></a>
+            <a href="https://api.whatsapp.com/send/?phone=5571991227224&text&app_absent=0"><img border="0" src="./assents/icons/whatsapp.png"/></a>     
+        
+        
+        </div> 
+    </header>
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 1</h2>
+                    <a href="https://fcosta74.github.io/Projeto/">Vem ver!</a>
+                </div>
+            </div>
+            <div class="card-text">
+                <b>Projeto feito em aula, simulação de um site tanto para descktop quanto mobile de um petshoop, onde vi html, css e java script.</b>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 2</h2>
+                    <a href="https://fcosta74.github.io/fcscontabilidade/">Vem ver!</a>
+                </div>
+            </div>
+            <div class="card-text">
+                <b>Meu primeiro desafio realizado sozinho, demorou um pouco mais consegui, simulação de um site de contabilidade, onde vi html, css e java script, em cima deste estou procurando me aprofundar cada vez mais.</b>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 3</h2>
+                    <a href="https://fcosta74.github.io/Playstation/">Vem ver!</a>
+                </div>
+            </div>
+            <div class="card-text">
+                <b>Projeto realizado em uma das aulas que tive que simula a venda de um determinado produto que tem uma animação.</b>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 4</h2>
+                    <a href="https://fcosta74.github.io/LogoInsta/">Vem ver!</a>
+                </div>
+            </div>
+            <div class="card-text">
+                <b>Criação do ícone do instagram realizado em uma das aulas.</b>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <b>Feito por Fábio Santos</b>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
 </html>
