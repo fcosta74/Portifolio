@@ -12,31 +12,33 @@ body{
 
 
 .header-container{
-    height: auto;
+    height: 90vh;
     width: 100%;
+    background-color: #60e1e0;
     background-image: url(./img/trabalho.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
     padding: 0 112px;
-    
+    position: relative;
 }
 h1{
-    font-size: 60px;
+    font-size: 55px;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 h2{
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2px;
-   
+    text-transform: uppercase;
 }
 .social-media{
-    display: flex;
-    
+    display: flex;   
 }
 .social-media a{
     text-decoration: none;
@@ -58,7 +60,7 @@ h2{
 }
 
 .checkbox{
-    height: auto;
+    height: 100px;
     width: 100px;
     position: absolute;
     right: 0;
@@ -107,16 +109,14 @@ h2{
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px aquamarine;
     z-index: -1;
-    transition: 400ms ease-in-out 0s;
-     
-    
+    transition: 400ms ease-in-out 0s;  
 }
 .menu-itens {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,12 +130,12 @@ h2{
 }
 .menu-itens ul li a {
     margin: 10px 0;
-    color: #1e1e2a;
+    color: #000814;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: 40px;     
-    padding: 50px;
+
 }
 /* ANIMAÇÃO DO MENU */
 #toggle:checked + .checkbox .trace:nth-child(1){
@@ -155,7 +155,7 @@ h2{
 #toggle:checked + .checkbox{
     background-color: #ffffff;
 }
-#toggle:checked ~ .menu{
+#toggle:checked ~ .menu{    
     box-shadow: 0px 0px 0px 100vmax #ffffff;
     z-index: 1;
 }
@@ -171,7 +171,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: gainsboro;
+    background-color: #dcfce7;
     
 }
 .card-container{
@@ -258,7 +258,7 @@ h2{
 .footer{
     width: 100%;
     height: 40px;
-    background-color: #f5f5f5;
+    background-color: rgba(128, 128, 128, 0.534);
     display: flex;
     align-items: center;
     justify-content: center;
