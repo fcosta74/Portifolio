@@ -1,4 +1,4 @@
-$("nav a").on("click", function (event) {
+("nav a").on("click", function (event) {
     if (this.hash !== "") {
         event.preventDefault();
 
@@ -12,7 +12,7 @@ $("nav a").on("click", function (event) {
         );
     }
 });
-// Sticky menu background
+
 window.addEventListener("scroll", function () {
     if (window.scrollY > 150) {
         document.querySelector("#nav").style.opacity = 0.9;
