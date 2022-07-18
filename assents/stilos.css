@@ -38,6 +38,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 header img{
     margin-left: 40px;
 }
@@ -81,7 +82,11 @@ main {
     font-weight: bold;
     background-image: url(img/fundao.jpg);
 }
-
+main a{
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: black;
+}
 main p{
     color: black;
     font-size: 18px; 
