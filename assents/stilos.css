@@ -1,43 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+:root {
+   
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
 body{
    margin: 0;
    padding: 0;
    font-family: 'Poppins', sans-serif;
    color: #1e1e2a; 
-  
-   
+   background-image: url(./img/fundao.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
 }
-/* HEADER */
-
-
-.header-container{
-    height: 80vh;
+header{
+    height: 60vh;
     width: 100%;
     max-width: 100%;
-    background-image: url(./img/trabalho.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
+    padding: 0 112px; 
+    background-image: url(./img/trabalho.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
+header > p{
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: var(--fonte-destaque);
+    margin-top: 10px;
+}
+
 h1{
     font-size: 55px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: blue;
+    font-family: var(--fonte-destaque);
+    color: black;
+    letter-spacing: 6px;
 }
 h2{
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: blue;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 0;
+    font-family: var(--fonte-padrao);
+    
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    background-image: url(img/fundao.jpg);
+}
+
+main > p{
+    color: black;
+    font-size: 18px; 
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+    
 }
 .social-media{
     display: flex;   
@@ -61,12 +105,10 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-image: url(../fundao.jpg);
+    
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
 }
-    
 
 .card-container{
     display: flex;
@@ -106,6 +148,7 @@ h2{
     justify-content: center;
     align-items: center;
     position: relative;
+    
 }
 .card-wrapper::before{
     content: '';
@@ -117,13 +160,22 @@ h2{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-
+.card-wrapper p{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 0;
+    transition: 0.5s ease-in-out;
+    color: #60e1e0;
+    text-align: justify;
+    
+}
 .card-wrapper h2{
     font-size: 20px;
     margin: 0;
     margin-top: 0;
     transition: 0.5s ease-in-out;
     color: #60e1e0;
+    text-align: justify;
     
 }
 .card-wrapper a{
@@ -159,6 +211,7 @@ h2{
     align-items: center;
     justify-content: center;
     color: #1e1e2a;
+    font-size: 15px;
    
 }
 @media (max-width: 760px) {
