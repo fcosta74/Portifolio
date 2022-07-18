@@ -13,6 +13,10 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
+a.externo::after {
+    content: '\00A0\1F517';
+    
+}
 body{
    margin: 0;
    padding: 0;
@@ -23,48 +27,52 @@ body{
    background-size: cover;
 }
 header{
-    height: 60vh;
+    height: 100%;
     width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 112px; 
-    background-image: url(./img/trabalho.jpg); 
+    background-image: url(./img/bacgroud.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-header > p{
-    color: black;
+header img{
+    margin-left: 40px;
+}
+header p{
+    color: white;
     font-size: 30px;
     letter-spacing: 1px;
     font-family: var(--fonte-destaque);
     margin-top: 10px;
+    margin-left: 40px;
 }
 
 h1{
     font-size: 55px;
     text-transform: uppercase;
     font-family: var(--fonte-destaque);
-    color: black;
+    color: white;
     letter-spacing: 6px;
 }
 h2{
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     text-align: justify;
     color: black;
-    margin-bottom: 0;
+    margin-top: 10px;
     font-family: var(--fonte-padrao);
+    
     
 }
 main {
-    min-width: 300px;
+    min-width: 250px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 15px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-right-radius: 10px;
@@ -74,38 +82,36 @@ main {
     background-image: url(img/fundao.jpg);
 }
 
-main > p{
+main p{
     color: black;
     font-size: 18px; 
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
     letter-spacing: 1px;
-    
+    margin-top: 3px;
+    font-weight: bold;
 }
 .social-media{
-    display: flex;   
+    display: flex;
+    float: left; 
 }
 .social-media a{
     text-decoration: none;
     color: #1e1e2a;
     padding: 1rem 1rem;
-    transition: .5s ease-in-out;
+    margin-left: -15px;
     width: 40px;
     height: 40px;
     display: flex;    
 }
-
-
 /* CARDS */
-
 .container{
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
     background-size: cover;
     background-repeat: no-repeat;    
 }
@@ -131,15 +137,14 @@ main > p{
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: 90fcf9;
-    
+    color: #90fcf9;
     transition: 0.5s case-in-out;
 
 }
+
 .card-text{
     width: 70%;
-    letter-spacing: 1px;
-    
+   
 }
 .card-wrapper{
     text-align: center;
@@ -148,6 +153,9 @@ main > p{
     justify-content: center;
     align-items: center;
     position: relative;
+    font-family: var(--fonte-destaque);
+    letter-spacing: 4px;
+    
     
 }
 .card-wrapper::before{
@@ -161,31 +169,15 @@ main > p{
     transition: 0.5s ease-in-out;
 }
 .card-wrapper p{
-    font-size: 20px;
     margin: 0;
-    margin-top: 0;
-    transition: 0.5s ease-in-out;
-    color: #60e1e0;
-    text-align: justify;
+    margin-top: 0;  
+    color: #60e1e0; 
     
 }
-.card-wrapper h2{
-    font-size: 20px;
-    margin: 0;
-    margin-top: 0;
-    transition: 0.5s ease-in-out;
-    color: #60e1e0;
-    text-align: justify;
-    
-}
-.card-wrapper a{
-    visibility: visible;
-    opacity: 0;
-    font-weight: bold;
-    transition: 0.5s ease-in-out;
-    color: #60e1e0;
+.card-wrapper > a{
     text-decoration: none;
 }
+
 .card:hover{
     filter: unset;
 }
@@ -194,7 +186,7 @@ main > p{
     width: 150px;
     opacity: 1;
 }
-.card:hover > .card-wrapper a {
+.card:hover > .card-wrapper > a {
     opacity: 1;
     visibility: visible;
     font-size: 20px;
@@ -205,7 +197,7 @@ main > p{
 
 .footer{
     width: 100%;
-    height: 40px;
+    height: 100%;
     background-color: #e4e4e7;
     display: flex;
     align-items: center;
@@ -217,27 +209,33 @@ main > p{
 @media (max-width: 760px) {
     .header-container{
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         padding: 0 10px;
         max-width: 100%;
     }
     h1{
-        font-size: 30px;
+        font-size: 25px;
         text-transform: uppercase;
-        letter-spacing: 2px;
         color: white;
     }
     h2{
+        font-size: 20px;
+        margin-left: -5px;
+        color: black;   
+    }
+    p{
         font-size: 15px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: white;
+        margin: 0;
+        color: black;   
     }
-    .card-text{
-        letter-spacing: 2px;
-        padding: 15px;
-        align-items: justify;
+    main p{
+        font-size: 15px;
+        margin-left: -1px;
+        
     }
-
+    header p{
+        font-size: 20px;
+    }
+   
 }
 
