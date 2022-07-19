@@ -27,7 +27,7 @@ body{
    background-size: cover;
 }
 .header-container{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -246,6 +246,9 @@ main p{
     }
     footer p{
         color: white;
+    }
+    .card-text{
+        text-align:left
     }
 }
 
