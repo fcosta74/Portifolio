@@ -27,7 +27,7 @@ body{
    background-size: cover;
 }
 .header-container{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     max-width: 100%;
     display: flex;
