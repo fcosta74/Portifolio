@@ -37,10 +37,9 @@ body{
     background-image: url(./img/bacgroud.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    background-attachment: fixed;
+    background-color: #1e1e2a;
 }
-
 header p{
     color: white;
     font-size: 30px;
