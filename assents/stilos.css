@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root {
+   
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+a.externo::after {
+    content: '\00A0\1F517';
+    
+}
+body{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   color: #1e1e2a; 
+   background-image: url(./img/fundao.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.header-container{
+    height: 60vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 112px; 
+    background-image: url(./img/programar.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #1e1e2a;
+    
+}
+
+
+.header-container h1{
+    font-size: 55px;
+    font-family: var(--fonte-destaque);
+    color: #fff;
+    letter-spacing: 6px;
+}
+.social-media{
+    display: flex;
+    float: left; 
+    margin-left: 100px;
+    align-items: center;
+}
+.social-media a{
+    text-decoration: none;
+    color: #1e1e2a;
+    padding: 1rem 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;    
+}
+h2{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #000;
+    margin-top: 10px;
+    font-family: var(--fonte-padrao);
+    
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    background-image: url(img/fundao.jpg);
+}
+main a{
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: #000;
+}
+main p{
+    font-size: 18px; 
+    text-align:justify;  
+    margin-left: 5px;
+    margin-right: 10px;
+    letter-spacing: 0.7px;
+    margin-top: 3px;
+    
+}
+
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/programar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #000;
+    transition: 0.5s case-in-out;
+
+}
+
+.card-text{
+    width: 70%;
+   
+}
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: var(--fonte-destaque);
+}
+.card-wrapper p{
+    margin-top: 60px;  
+    color: blue; 
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.card-wrapper > a{
+    text-decoration: none;
+}
+
+.card:hover{
+    filter: unset;
+}
+.card:hover > .card-wrapper::before{
+    height: 150px;
+    width: 150px;
+    opacity: 1;
+}
+.card:hover > .card-wrapper > a {
+    opacity: 1;
+    visibility: visible;
+    font-size: 20px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1e1e2a;
+}
+@media (max-width: 760px) {
+    .header-container{
+        width: 150vh;
+        height: 40vh;
+        padding: 0 10px;
+        max-width: 100%;
+        
+    }
+    h1{
+        font-size: 23px;
+        text-transform: uppercase;
+        color: white;        
+
+    }
+   
+    h2{
+        font-size: 20px;
+        margin-left: 2px;
+        color: black;   
+    }
+   
+    main p{
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 20px;        
+    }
+    .social-media{
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    header p{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    footer p{
+        color: white;
+    }
+    .card-text{
+        text-align:left
+    }
+}
+
